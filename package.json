@@ -1,0 +1,15 @@
+{
+  "name": "ps-intro_to_node",
+  "version": "1.0.0",
+  "description": "https://app.pluralsight.com/library/courses/node-intro/table-of-contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
