@@ -1,6 +1,6 @@
 # Ignore
 node_modules
-tmp/*.*
+tmp/**/*.*
 
 # Keep
 !.gitkeep
