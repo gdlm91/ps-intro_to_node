@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>5.3 Web Sockets</title>
+        <meta charset="UTF-8">
+    </head>
+    <body onload="onload()">
+        <div>
+            <b>Timer: </b>
+            <span id="timer"></span>
+        </div>
+
+        <div>
+            <input type="text" id="inputdata">
+            <button type="button" onclick="submitData()">Submit</button>
+        </div>        
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket;
+
+            function onload() {
+                console.log('Hello!');
+                socket = io();
+                
+                socket.on('timer', function(data) {
+                    document.getElementById("timer").innerHTML = data;
+                });
+            }
+
+            function submitData() {
+                var data = document.getElementById("inputdata").value;
+                socket.emit('submit', data);
+            }
+        </script>
+    </body>
+</html>

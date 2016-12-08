@@ -1,0 +1,1 @@
+Text it's been piped to the Res Writable Stream
